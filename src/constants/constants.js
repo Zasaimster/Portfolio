@@ -21,6 +21,7 @@ const about = {
 
 const experience = [
   {
+    id: "db",
     title: "Software Engineering Intern",
     company: "Daily Bruin",
     desc: [

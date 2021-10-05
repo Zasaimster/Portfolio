@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Footer from "../components/Footer/Footer";
 import HeroSection from "../components/HeroSection/Hero";
-import { homeObj1, homeObj2, homeObj3 } from "../components/InfoSection/Data";
+import { homeObj1, homeObj2, homeObj3 } from "../components/About/Data";
 import {
   homePage,
   about,
@@ -10,10 +10,12 @@ import {
   darkTheme,
   lightTheme,
 } from "../constants/constants";
-import InfoSection from "../components/InfoSection/InfoSection";
+import About from "../components/About/About";
 import Navbar from "../components/Navbar/Navbar";
 import Services from "../components/Services/Services";
 import Sidebar from "../components/Sidebar/Sidebar";
+import Experience from "../components/Experience/Experience";
+import Projects from "../components/PersonalProjects/Projects";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,10 +29,10 @@ const Home = () => {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection data={homePage} />
-      <InfoSection colorTheme={lightTheme} data={about} />
-      <InfoSection colorTheme={darkTheme} data={about} />
+      <About colorTheme={lightTheme} data={about} />
+      <Experience colorTheme={darkTheme} data={experience} />
       <Services />
-      <InfoSection colorTheme={lightTheme} data={experience} />
+      <Projects colorTheme={lightTheme} data={projects} />
       <Footer />
     </>
   );
