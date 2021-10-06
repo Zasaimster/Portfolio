@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { animateScroll as scroll } from "react-scroll";
 import * as Styled from "./Navbar.styled";
 import { FaBars } from "react-icons/fa";
+import resume from "../../pdf/resume.pdf";
 
 export const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -69,28 +70,9 @@ export const Navbar = ({ toggle }) => {
                 Projects
               </Styled.NavLinks>
             </Styled.NavItem>
-            <Styled.NavItem>
-              <Styled.NavLinks
-                smooth='true'
-                duration={300}
-                spy='true'
-                exact='true'
-                offset={-80}
-                to='contact'
-              >
-                Contact
-              </Styled.NavLinks>
-            </Styled.NavItem>
           </Styled.NavMenu>
           <Styled.NavBtn>
-            <Styled.NavBtnLink
-              smooth='true'
-              duration={300}
-              spy='true'
-              exact='true'
-              offset={-80}
-              to='/resume'
-            >
+            <Styled.NavBtnLink href={resume} target='_blank'>
               Resume
             </Styled.NavBtnLink>
           </Styled.NavBtn>

@@ -10,16 +10,21 @@ const homePage = {
 };
 
 const about = {
-  id: "about",
   imgStart: false,
   smallHeader: "About",
   header: null,
   desc1: `Hey! My name is Saim, and I'm currently a Sophomore studying Computer Science at UCLA. When I was younger, I always enjoyed tinkering and creating things. Now, I am spending my time learning to create full stack applications and new topics that will help me assist others in our world of technology.`,
   desc2: `Today, I've had the opportunity of working at UCLA's premier professor, class, and apartment review website and at an organization that utilizes applications as an outlet for creativity. I'm currently looking for more opportunities in full stack development, and I'm looking to learn more about data analysis and embedded systems.`,
-  buttonLabel: "Resume",
-  image: pfp,
+  desc3: `Here are a few technologies I use: `,
   alt: "",
-  tags: ["React, Node.js, Django, Google Cloud, C++, JavaScript (ES6+)"],
+  tags: [
+    "React",
+    "Node.js",
+    "Django",
+    "Google Cloud",
+    "C++",
+    "JavaScript (ES6+)",
+  ],
 };
 
 const listOfExperiences = ["Daily Bruin", "Palace Properties", "Creative Labs"];
@@ -87,7 +92,7 @@ const projects = [
     desc: "A simple drawing application created with HTML Canvas that has undo, custom colors, and custom shape features. ",
     tags: ["HTML", "JavaScript", "CSS"],
     github: "https://github.com/Zasaimster/Paint",
-    website: "https://saim-sortingvisualizer.netlify.app/",
+    website: "https://basicpaint.netlify.app/",
     image: paint,
     imgStart: true,
   },

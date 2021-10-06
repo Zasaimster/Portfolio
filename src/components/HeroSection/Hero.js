@@ -21,13 +21,13 @@ const HeroSection = ({ data }) => {
         <Styled.HeroP> {data.desc2} </Styled.HeroP>
         <Styled.HeroBtnWrapper>
           <Button
-            to='resume'
+            href='mailto:Saimm.Ahmadd@gmailcom'
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary='true'
             dark='true'
           >
-            Resume {hover ? <Styled.ArrowForward /> : <Styled.ArrowRight />}
+            Let's Talk {hover ? <Styled.ArrowForward /> : <Styled.ArrowRight />}
           </Button>
         </Styled.HeroBtnWrapper>
       </Styled.HeroContent>

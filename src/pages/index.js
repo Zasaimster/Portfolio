@@ -32,7 +32,6 @@ const Home = () => {
       <About colorTheme={darkTheme} data={about} />
       <Experience colorTheme={lightTheme} data={experience} />
       <Projects colorTheme={darkTheme} data={projects} />
-      <Services />
       <Footer />
     </>
   );
