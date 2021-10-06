@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Footer from "../components/Footer/Footer";
-import HeroSection from "../components/HeroSection/Hero";
+import HeroSection from "../components/HeroSection/Home";
 import { homeObj1, homeObj2, homeObj3 } from "../components/About/Data";
 import {
   homePage,

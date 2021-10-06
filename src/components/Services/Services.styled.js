@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { theme } from "../../constants/theme";
 
 export const ServicesContainer = styled.div`
   height: 800px;
@@ -6,7 +7,7 @@ export const ServicesContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #010606;
+  background: ${theme.darkBg};
 
   @media screen and(max-width: 768px) {
     height: 1100px;
