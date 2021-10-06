@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link } from "react-scroll";
 import { theme } from "../../constants/theme";
 
 export const Button = styled.a`

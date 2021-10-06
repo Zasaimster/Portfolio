@@ -1,17 +1,13 @@
 import React from "react";
 import * as Styled from "./About.styled";
-import { Button } from "../elements/Button.styled";
 import { theme } from "../../constants/theme";
 
 import ImgData from "../../images/headshot.jpg";
 
 const About = (props) => {
-  console.log(props);
-  const { lightBg, lightText, lightTextDesc, dark, primary, darkText, dark2 } =
-    props.colorTheme;
+  const { lightBg, lightText, darkText } = props.colorTheme;
   const { imgStart, smallHeader, header, desc1, desc2, desc3, alt, tags } =
     props.data;
-  console.log(imgStart);
 
   return (
     <>
@@ -34,11 +30,10 @@ const About = (props) => {
                 >
                   {desc3}
                 </Styled.Subtitle>
-                <Styled.BtnWrap></Styled.BtnWrap>
                 <Styled.TagsWrapper>
-                  {tags.map((tag) => (
-                    <Styled.Tag>
-                      <span style={{ color: theme.mainColor }}> &#8227; </span>
+                  {tags.map((tag, index) => (
+                    <Styled.Tag key={index}>
+                      <span style={{ color: theme.mainColor }}>&#8227;</span>
                       {tag}
                     </Styled.Tag>
                   ))}

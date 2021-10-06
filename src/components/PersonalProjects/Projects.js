@@ -1,25 +1,11 @@
 import React from "react";
 import * as Styled from "./Projects.styled";
-import { Button } from "../elements/Button.styled";
 
-import ImgData from "../../images/about.svg";
 import { Title } from "../elements/Title.styled";
 import TagCard from "./TagCard";
 
 const Projects = (props) => {
-  console.log(props);
-  const { lightBg, lightText, lightTextDesc, dark, primary, darkText, dark2 } =
-    props.colorTheme;
-  // const {
-  //   name,
-  //   desc,
-  //   tags,
-  //   github,
-  //   website,
-  //   image,
-  //   alt,
-  //   imgStart
-  // } = props.data;
+  const { lightBg, lightText, darkText } = props.colorTheme;
   const data = props.data;
 
   return (
@@ -28,8 +14,8 @@ const Projects = (props) => {
         <Title id='projects' lightText={lightText}>
           Projects
         </Title>
-        {data.map((project) => (
-          <Styled.InfoWrapper>
+        {data.map((project, index) => (
+          <Styled.InfoWrapper key={index}>
             <Styled.InfoRow imgStart={project.imgStart}>
               <Styled.Column1>
                 <Styled.TextWrapper>

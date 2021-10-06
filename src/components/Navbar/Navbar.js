@@ -50,7 +50,7 @@ export const Navbar = ({ toggle }) => {
               <Styled.NavLinks
                 smooth='true'
                 duration={300}
-                spy='true'
+                spy={true}
                 exact='true'
                 offset={-80}
                 to='experience'
@@ -62,7 +62,7 @@ export const Navbar = ({ toggle }) => {
               <Styled.NavLinks
                 smooth='true'
                 duration={300}
-                spy='true'
+                spy={true}
                 exact='true'
                 offset={-80}
                 to='projects'

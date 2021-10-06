@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Footer from "../components/Footer/Footer";
-import HeroSection from "../components/HeroSection/Home";
-import { homeObj1, homeObj2, homeObj3 } from "../components/About/Data";
+import HeroSection from "../components/Home/Home";
 import {
   homePage,
   about,
@@ -12,7 +11,6 @@ import {
 } from "../constants/constants";
 import About from "../components/About/About";
 import Navbar from "../components/Navbar/Navbar";
-import Services from "../components/Services/Services";
 import Sidebar from "../components/Sidebar/Sidebar";
 import Experience from "../components/Experience/Experience";
 import Projects from "../components/PersonalProjects/Projects";

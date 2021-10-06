@@ -4,11 +4,9 @@ import Selector from "./Selector";
 
 import { listOfExperiences } from "../../constants/constants";
 import { Title } from "../elements/Title.styled";
-import { theme } from "../../constants/theme";
 
 const Experience = (props) => {
-  const { lightBg, lightText, lightTextDesc, dark, primary, darkText, dark2 } =
-    props.colorTheme;
+  const { lightBg, lightText, darkText } = props.colorTheme;
 
   const [expIndx, setExpIndx] = useState(0);
   const exp = props.data[expIndx];
@@ -36,8 +34,8 @@ const Experience = (props) => {
               <Styled.Date>
                 {exp.startDate} - {exp.endDate}
               </Styled.Date>
-              {exp.desc.map((description) => (
-                <Styled.Subtitle darkText={darkText}>
+              {exp.desc.map((description, index) => (
+                <Styled.Subtitle darkText={darkText} key={index}>
                   &#8227; {description}
                 </Styled.Subtitle>
               ))}
