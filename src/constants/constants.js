@@ -1,4 +1,7 @@
 import pfp from "../images/headshot.jpg";
+import visualizer from "../images/visualizer.png";
+import paint from "../images/paint.png";
+import zasbot from "../images/zasbot.png";
 
 const homePage = {
   desc1: "I'm currently a Sophomore studying Computer Science at UCLA.",
@@ -19,6 +22,8 @@ const about = {
   tags: ["React, Node.js, Django, Google Cloud, C++, JavaScript (ES6+)"],
 };
 
+const listOfExperiences = ["Daily Bruin", "Palace Properties", "Creative Labs"];
+
 const experience = [
   {
     id: "db",
@@ -37,8 +42,7 @@ const experience = [
     company: "Palace Properties",
     desc: [
       "Created a dashboard to streamline the process of organizing incoming reservation requests from customers",
-      `Implemented a draggable kanban board where property managers can update the different statuses of reservations
-            as well as adding important tags such as “Security Deposit Paid”, “Payment Needed”, and “Paid in Full”`,
+      `Implemented a draggable kanban board where property managers can update the different statuses of reservations`,
       `Made multiple other front end components for property managers to adjust their property info and for clients to
             view their rented properties`,
     ],
@@ -65,24 +69,27 @@ const projects = [
     tags: ["Algorithms", "Data Structures", "Visualization", "React"],
     github: "https://github.com/Zasaimster/Sorting-Algorithm-Visualizer",
     website: "https://saim-sortingvisualizer.netlify.app/",
-    image: "",
+    image: visualizer,
+    imgStart: true,
   },
   {
     name: "ZasBot",
-    desc: "Discord bot that scrapes Valorant and Fortnite statistics. Discord user data can be stored for easy accessibility.",
+    desc: "A Discord bot that scrapes Valorant and Fortnite statistics. Discord user data can be stored for easy accessibility.",
     tags: ["Node.js", "Discord.js", "Firebase", "Web Scraping"],
     github: "https://github.com/Zasaimster/DiscordBot",
     website:
       "https://discord.com/login?redirect_to=%2Foauth2%2Fauthorize%3Fclient_id%3D869731362373009468%26scope%3Dbot%2Bapplications.commands",
-    image: "",
+    image: zasbot,
+    imgStart: false,
   },
   {
     name: "Paint App",
-    desc: "An application to visualize many common sorting algorithms such as merge sort, quick sort, radix sort, and more with adjustable sorting speeds and array sizes.",
-    tags: ["Algorithms", "Data Structures", "Visualization", "React"],
+    desc: "A simple drawing application created with HTML Canvas that has undo, custom colors, and custom shape features. ",
+    tags: ["HTML", "JavaScript", "CSS"],
     github: "https://github.com/Zasaimster/Paint",
     website: "https://saim-sortingvisualizer.netlify.app/",
-    image: "",
+    image: paint,
+    imgStart: true,
   },
 ];
 
@@ -104,4 +111,12 @@ const lightTheme = {
   darkText: true,
 };
 
-export { homePage, about, experience, projects, lightTheme, darkTheme };
+export {
+  homePage,
+  about,
+  listOfExperiences,
+  experience,
+  projects,
+  lightTheme,
+  darkTheme,
+};

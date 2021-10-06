@@ -89,9 +89,9 @@ export const Navbar = ({ toggle }) => {
               spy='true'
               exact='true'
               offset={-80}
-              to='/signin'
+              to='/resume'
             >
-              Sign in
+              Resume
             </Styled.NavBtnLink>
           </Styled.NavBtn>
         </Styled.NavbarContainer>

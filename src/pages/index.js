@@ -29,10 +29,10 @@ const Home = () => {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection data={homePage} />
-      <About colorTheme={lightTheme} data={about} />
-      <Experience colorTheme={darkTheme} data={experience} />
+      <About colorTheme={darkTheme} data={about} />
+      <Experience colorTheme={lightTheme} data={experience} />
+      <Projects colorTheme={darkTheme} data={projects} />
       <Services />
-      <Projects colorTheme={lightTheme} data={projects} />
       <Footer />
     </>
   );
