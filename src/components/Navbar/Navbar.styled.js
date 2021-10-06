@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 import { theme } from "../../constants/theme";
@@ -30,6 +30,14 @@ export const NavbarContainer = styled.div`
   max-width: 1100px;
 `;
 
+const slideDown = keyframes`
+  to { transform: translateY(0); opacity: 1; }
+`;
+
+const slideDownMobileIcon = keyframes`
+  to { transform: translate(-100%, 35%); opacity: 1;}
+`;
+
 export const NavLogo = styled(LinkR)`
   color: #fff;
   justify-self: flex-start;
@@ -41,6 +49,14 @@ export const NavLogo = styled(LinkR)`
   font-weight: bold;
   text-decoration: none;
   color: white;
+
+  opacity: 0;
+  transform: translateY(-100%);
+  animation: 350ms ${slideDown} ease-out forwards;
+
+  @media screen and (max-width: 670px) {
+    margin-left: 0;
+  }
 `;
 
 export const MobileIcon = styled.div`
@@ -51,10 +67,14 @@ export const MobileIcon = styled.div`
     positon: absolute;
     top: 0;
     right: 0;
-    transform: translate(-100%, 35%);
+    //transform: translate(-100%, 35%);
     font-size: 1.8rem;
     cursor: pointer;
     color: #fff;
+
+    opacity: 0;
+    transform: translateY(-100%);
+    animation: 350ms ${slideDownMobileIcon} 50ms ease-out forwards;
   }
 
   @media screen and (max-width: 450px) {
@@ -76,6 +96,22 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
   height: 80px;
+
+  opacity: 0;
+  transform: translateY(-100%);
+  //animation: ${slideDown} 350ms ease-out forwards;
+
+  &:nth-of-type(1) {
+    animation: 350ms ${slideDown} 50ms ease-out forwards;
+  }
+
+  &:nth-of-type(2) {
+    animation: 300ms ${slideDown} 200ms ease-out forwards;
+  }
+
+  &:nth-of-type(3) {
+    animation: 250ms ${slideDown} 350ms ease-out forwards;
+  }
 `;
 
 export const NavLinks = styled(LinkS)`
@@ -95,6 +131,10 @@ export const NavLinks = styled(LinkS)`
 export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
+
+  opacity: 0;
+  transform: translateY(-100%);
+  animation: 200ms ${slideDown} 500ms ease-out forwards;
 
   @media screen and (max-width: 768px) {
     display: none;

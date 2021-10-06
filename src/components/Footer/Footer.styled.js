@@ -1,6 +1,10 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
 import { theme } from "../../constants/theme";
+
+const slideIn = keyframes`
+  to { transform: translateY(0); opacity: 1; }
+`;
 
 export const FooterContainer = styled.div`
   text-align: center;
@@ -38,6 +42,10 @@ export const FooterLinkedIn = styled(AiFillLinkedin)`
 
   transition: 100ms all ease-in-out;
 
+  opacity: 0;
+  transform: translateY(100%);
+  animation: 350ms ${slideIn} ease-out forwards;
+
   &:hover {
     transition: 100ms all ease-in-out;
     transform: scale(1.2);
@@ -56,6 +64,10 @@ export const FooterGithub = styled(AiFillGithub)`
 
   transition: 100ms all ease-in-out;
 
+  opacity: 0;
+  transform: translateY(100%);
+  animation: 350ms ${slideIn} 300ms ease-out forwards;
+
   &:hover {
     transition: 100ms all ease-in-out;
     transform: scale(1.2);
@@ -73,6 +85,10 @@ export const FooterEmail = styled(AiOutlineMail)`
   margin-left: 12px;
 
   transition: 100ms all ease-in-out;
+
+  opacity: 0;
+  transform: translateY(100%);
+  animation: 350ms ${slideIn} 600ms ease-out forwards;
 
   &:hover {
     transition: 100ms all ease-in-out;

@@ -1,7 +1,11 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
 import Particles from "react-particles-js";
 import { theme } from "../../constants/theme";
+
+const slideIn = keyframes`
+  to { transform: translateY(0); opacity: 1; }
+`;
 
 export const Container = styled.div`
   background: ${theme.darkBg};
@@ -35,12 +39,20 @@ export const Topline = styled.p`
   font-weight: 700;
   //letter-spacing: 1.4px;
   margin-bottom: 16px;
+
+  opacity: 0;
+  transform: translateY(100%);
+  animation: 350ms ${slideIn} 700ms ease-out forwards;
 `;
 
 export const H1 = styled.h1`
   color: #fff;
   font-size: 64px;
   letter-spacing: 4px;
+
+  opacity: 0;
+  transform: translateX(3%);
+  animation: 300ms ${slideIn} 1000ms ease-out forwards;
 
   @media screen and (max-width: 768px) {
     font-size: 40px;
@@ -57,6 +69,10 @@ export const H2 = styled.h1`
   margin-top: 20px;
   letter-spacing: 4px;
 
+  opacity: 0;
+  transform: translateX(-3%);
+  animation: 300ms ${slideIn} 1100ms ease-out forwards;
+
   @media screen and (max-width: 768px) {
     font-size: 32px;
   }
@@ -67,12 +83,18 @@ export const H2 = styled.h1`
 `;
 
 export const P = styled.p`
+  opacity: 0;
+
   &:nth-of-type(2) {
     margin-top: 24px;
+    transform: translateY(40%);
+    animation: 300ms ${slideIn} 1200ms ease-out forwards;
   }
 
   &:nth-of-type(3) {
     margin-top: 10px;
+    transform: translateY(20%);
+    animation: 300ms ${slideIn} 1400ms ease-out forwards;
   }
   //color: #fff;
   color: rgba(255, 255, 255, 0.7);
@@ -95,6 +117,10 @@ export const BtnWrap = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+
+  opacity: 0;
+  transform: translateY(100%);
+  animation: 300ms ${slideIn} 1500ms ease-out forwards;
 `;
 
 export const ArrowForward = styled(MdArrowForward)`
