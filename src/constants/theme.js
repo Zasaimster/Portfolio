@@ -4,5 +4,6 @@ export const theme = {
   lightTextColor: "#f7f8f8",
   lightBg: "#f9f9f9",
   darkTextColor: "#010606",
-  darkBg: "#000d21",
+  //darkBg: "#000d21",
+  darkBg: "#001433",
 };

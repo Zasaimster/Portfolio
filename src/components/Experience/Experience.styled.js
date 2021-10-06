@@ -53,7 +53,7 @@ export const Column2 = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-  width: 540px;
+  width: 700px;
   //change
   padding-top: 0;
   padding-bottom: 170px;
@@ -80,7 +80,7 @@ export const Date = styled.p`
 `;
 
 export const Heading = styled.h1`
-  margin-bottom: 8px;
+  margin-bottom: 5px;
   font-size: 24px;
   line-height: 1.1;
   font-weight: 600;
@@ -92,8 +92,39 @@ export const Heading = styled.h1`
   }
 `;
 
+export const Link = styled.p`
+  color: ${theme.mainColor};
+  font-style: italic;
+  cursor: pointer;
+  width: fit-content;
+  display: inline-block;
+
+  position: relative;
+
+  &::after {
+    transition: all ease-in-out 200ms;
+    background: none repeat scroll 0 0 ${theme.mainColor};
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    margin-top: 3px;
+  }
+
+  &:hover {
+    &::after {
+      width: 100%;
+    }
+  }
+
+  & a {
+    text-decoration: none;
+    color: ${theme.mainColor};
+  }
+`;
+
 export const Subtitle = styled.p`
-  max-width: 500px;
+  //max-width: 500px;
   margin-bottom: 12px;
   font-size: 18px;
   line-height: 24px;

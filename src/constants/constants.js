@@ -1,4 +1,3 @@
-import pfp from "../images/headshot.jpg";
 import visualizer from "../images/visualizer.png";
 import paint from "../images/paint.png";
 import zasbot from "../images/zasbot.png";
@@ -34,6 +33,7 @@ const experience = [
     id: "db",
     title: "Software Engineering Intern",
     company: "Daily Bruin",
+    link: `https://www.bruinwalk.com/`,
     desc: [
       "Developing UCLA’s classes, professor, and apartment review website used by over 18k students yearly",
       "Assisting the redesign process of the entire website written in Django",
@@ -45,6 +45,7 @@ const experience = [
   {
     title: "Software Engineering Intern",
     company: "Palace Properties",
+    link: `https://www.linkedin.com/company/palace-properties/about/`,
     desc: [
       "Created a dashboard to streamline the process of organizing incoming reservation requests from customers",
       `Implemented a draggable kanban board where property managers can update the different statuses of reservations`,
@@ -57,6 +58,7 @@ const experience = [
   {
     title: "Software Developer",
     company: "Creative Labs",
+    link: `https://www.creativelabsucla.com/`,
     desc: [
       "Collaborated with the research team to create a Firestore database to conveniently store information about small, local businesses",
       "Learned XCode, Swift, and Google Firebase to develop the backend for this iOS app",

@@ -1,6 +1,5 @@
 import React from "react";
 import * as Styled from "./Footer.styled";
-import { ColorWrapper } from "../elements/ColorWrapper";
 
 const Footer = () => {
   return (

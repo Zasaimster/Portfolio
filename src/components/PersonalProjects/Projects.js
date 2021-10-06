@@ -5,7 +5,6 @@ import { Button } from "../elements/Button.styled";
 import ImgData from "../../images/about.svg";
 import { Title } from "../elements/Title.styled";
 import TagCard from "./TagCard";
-import { ColorWrapper } from "../elements/ColorWrapper";
 
 const Projects = (props) => {
   console.log(props);

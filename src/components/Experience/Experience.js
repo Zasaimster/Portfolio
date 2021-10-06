@@ -26,8 +26,12 @@ const Experience = (props) => {
           <Styled.InfoWrapper>
             <Styled.TextWrapper>
               <Styled.Heading lightText={lightText}>
-                {exp.title} @
-                <em style={{ color: theme.mainColor }}> {exp.company} </em>
+                {exp.title} @{" "}
+                <Styled.Link>
+                  <a href={exp.link} target='_blank' rel='noreferrer'>
+                    {exp.company}
+                  </a>
+                </Styled.Link>
               </Styled.Heading>
               <Styled.Date>
                 {exp.startDate} - {exp.endDate}
