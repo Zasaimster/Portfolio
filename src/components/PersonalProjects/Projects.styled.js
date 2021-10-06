@@ -11,6 +11,10 @@ export const InfoContainer = styled.div`
   @media screen and (max-width: 768px) {
     padding: 100px 0;
   }
+
+  @media screen and (max-width: 450px) {
+    padding: 0;
+  }
 `;
 
 export const InfoWrapper = styled.div`
@@ -23,6 +27,10 @@ export const InfoWrapper = styled.div`
   margin-left: auto;
   padding: 75px 24px 25px 24px;
   justify-content: center;
+
+  @media screen and (max-width: 450px) {
+    padding: 55px 24px 25px 24px;
+  }
 `;
 
 export const InfoRow = styled.div`
@@ -84,6 +92,14 @@ export const Subtitle = styled.p`
   font-size: 18px;
   line-height: 24px;
   color: ${({ darkText }) => (darkText ? theme.darkTextColor : "#fff")};
+
+  @media screen and (max-width: 450px) {
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 350px) {
+    font-size: 14px;
+  }
 `;
 
 export const ImgWrap = styled.div`

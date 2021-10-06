@@ -7,6 +7,10 @@ export const Container = styled.div`
   justify-content: center;
   padding: 60px 0 30px 0;
   background-color: ${theme.lightBg};
+
+  @media screen and (max-width: 450px) {
+    padding: 45px 15px 0 15px;
+  }
 `;
 
 export const Experience = styled.div`
@@ -16,4 +20,8 @@ export const Experience = styled.div`
   transition: 200ms all ease-in-out;
   border-bottom: ${({ isSelected }) =>
     isSelected ? `2px solid ${theme.mainColor}` : `2px solid ${theme.lightBg}`};
+
+  @media screen and (max-width: 450px) {
+    font-size: 14px;
+  }
 `;

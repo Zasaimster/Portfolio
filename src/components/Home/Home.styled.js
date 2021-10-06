@@ -9,12 +9,12 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  height: 800px;
+  height: 100vh;
 `;
 
 export const RainParticles = styled(Particles)`
   width: 100%;
-  height: 800px;
+  height: 100vh;
   background: ${theme.darkBg};
 `;
 
@@ -56,6 +56,14 @@ export const H2 = styled.h1`
   color: rgba(255, 255, 255, 0.7);
   margin-top: 20px;
   letter-spacing: 4px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 32px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 24px;
+  }
 `;
 
 export const P = styled.p`
@@ -72,11 +80,11 @@ export const P = styled.p`
   max-width: 600px;
 
   @media screen and (max-width: 768px) {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 18px;
+    font-size: 16px;
   }
 `;
 

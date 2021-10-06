@@ -8,4 +8,9 @@ export const Title = styled.h1`
   background: ${({ lightText }) => (lightText ? theme.darkBg : theme.lightBg)};
   color: ${({ lightText }) =>
     lightText ? theme.lightTextColor : theme.darkTextColor};
+
+  @media screen and (max-width: 450px) {
+    padding-top: 45px;
+    font-size: 24px;
+  }
 `;

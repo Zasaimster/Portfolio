@@ -17,11 +17,6 @@ const About = (props) => {
             <Styled.Column1>
               <Styled.TextWrapper>
                 <Styled.TopLine>{smallHeader}</Styled.TopLine>
-                {header !== null && (
-                  <Styled.Heading lightText={lightText}>
-                    {header}
-                  </Styled.Heading>
-                )}
                 <Styled.Subtitle darkText={darkText}>{desc1}</Styled.Subtitle>
                 <Styled.Subtitle darkText={darkText}>{desc2}</Styled.Subtitle>
                 <Styled.Subtitle

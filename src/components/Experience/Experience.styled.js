@@ -13,6 +13,11 @@ export const InfoContainer = styled.div`
   @media screen and (max-width: 768px) {
     padding: 100px 0;
   }
+
+  @media screen and (max-width: 450px) {
+    padding: 50px 0;
+    margin-bottom: -75px;
+  }
 `;
 
 export const InfoWrapper = styled.div`
@@ -28,7 +33,7 @@ export const InfoWrapper = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-  width: 700px;
+  max-width: 700px;
   //change
   padding-top: 0;
   padding-bottom: 170px;
@@ -63,7 +68,6 @@ export const Heading = styled.h1`
     lightText ? theme.lightTextColor : theme.darkTextColor};
 
   @media screen and (max-width: 480px) {
-    font-size: 32px;
   }
 `;
 
@@ -104,4 +108,12 @@ export const Subtitle = styled.p`
   font-size: 18px;
   line-height: 24px;
   color: ${({ darkText }) => (darkText ? theme.darkTextColor : "#fff")};
+
+  @media screen and (max-width: 450px) {
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 300px) {
+    font-size: 14px;
+  }
 `;

@@ -18,9 +18,6 @@ const Sidebar = ({ isOpen, toggle }) => {
           <Styled.SidebarLink to='projects' onClick={toggle}>
             Projects
           </Styled.SidebarLink>
-          <Styled.SidebarLink to='contact' onClick={toggle}>
-            Contact
-          </Styled.SidebarLink>
         </Styled.SidebarMenu>
         <Styled.SideBtnWrap>
           <Styled.SidebarRoute to='/resume' onClick={toggle}>

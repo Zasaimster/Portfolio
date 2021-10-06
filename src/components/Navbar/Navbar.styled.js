@@ -56,6 +56,10 @@ export const MobileIcon = styled.div`
     cursor: pointer;
     color: #fff;
   }
+
+  @media screen and (max-width: 450px) {
+    transform: translate(-10%, 35%);
+  }
 `;
 
 export const NavMenu = styled.ul`
