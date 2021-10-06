@@ -3,6 +3,10 @@ import { AiFillGithub } from "react-icons/ai";
 import { FiExternalLink } from "react-icons/fi";
 import { theme } from "../../constants/theme";
 
+export const ProjectsContainer = styled.div`
+  background: ${theme.darkBg};
+`;
+
 export const InfoContainer = styled.div`
   color: #fff;
   background: ${({ lightBg }) => (lightBg ? theme.lightBg : theme.darkBg)};

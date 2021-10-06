@@ -21,6 +21,8 @@ export const Experience = styled.div`
   border-bottom: ${({ isSelected }) =>
     isSelected ? `2px solid ${theme.mainColor}` : `2px solid ${theme.lightBg}`};
 
+  background-color: ${theme.lightBg};
+
   @media screen and (max-width: 450px) {
     font-size: 14px;
   }

@@ -6,12 +6,16 @@ const fadeIn = keyframes`
   100% {opacity:1;}
 `;
 
+export const ExperienceContainer = styled.div`
+  background: ${theme.lightBg};
+`;
+
 export const InfoContainer = styled.div`
   color: #fff;
   background: ${({ lightBg }) => (lightBg ? theme.lightBg : theme.darkBg)};
 
   @media screen and (max-width: 768px) {
-    padding: 100px 0;
+    padding: 25px 0 50px 0;
   }
 
   @media screen and (max-width: 450px) {
