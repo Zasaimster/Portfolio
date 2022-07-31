@@ -36,9 +36,9 @@ export const LinkContainer = styled.div`
 
 export const FooterLinkedIn = styled(AiFillLinkedin)`
   color: ${theme.mainColor};
-  width: 32px;
-  height: 32px;
-  margin-left: 12px;
+  width: 48px;
+  height: 48px;
+  margin-left: 18px;
 
   opacity: 0;
   animation: 350ms ${fadeIn} ease-out forwards;
@@ -56,9 +56,9 @@ export const FooterLinkedIn = styled(AiFillLinkedin)`
 
 export const FooterGithub = styled(AiFillGithub)`
   color: ${theme.mainColor};
-  width: 32px;
-  height: 32px;
-  margin-left: 12px;
+  width: 48px;
+  height: 48px;
+  margin-left: 18px;
 
   transition: 100ms all ease-in-out;
 
@@ -77,9 +77,9 @@ export const FooterGithub = styled(AiFillGithub)`
 
 export const FooterEmail = styled(AiOutlineMail)`
   color: ${theme.mainColor};
-  width: 32px;
-  height: 32px;
-  margin-left: 12px;
+  width: 48px;
+  height: 48px;
+  margin-left: 18px;
 
   transition: 100ms all ease-in-out;
 
