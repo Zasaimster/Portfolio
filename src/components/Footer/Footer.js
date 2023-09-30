@@ -21,7 +21,7 @@ const Footer = () => {
             >
               <Styled.FooterGithub />
             </a>
-            <a href='mailto:Saimm.Ahmadd@gmail.com'>
+            <a href='mailto:saimm.ahmadd@gmail.com'>
               <Styled.FooterEmail />
             </a>
           </Styled.LinkContainer>
