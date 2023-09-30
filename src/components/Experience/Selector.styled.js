@@ -9,7 +9,7 @@ export const Container = styled.div`
   background-color: ${theme.lightBg};
 
   @media screen and (max-width: 450px) {
-    padding: 45px 15px 0 15px;
+    padding: 20px 15px 0 15px;
   }
 `;
 
@@ -24,6 +24,6 @@ export const Experience = styled.div`
   background-color: ${theme.lightBg};
 
   @media screen and (max-width: 450px) {
-    font-size: 14px;
+    font-size: 12px;
   }
 `;

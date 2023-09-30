@@ -10,7 +10,7 @@ export const Title = styled.h1`
     lightText ? theme.lightTextColor : theme.darkTextColor};
 
   @media screen and (max-width: 450px) {
-    padding-top: 45px;
-    font-size: 24px;
+    padding-top: 20px;
+    font-size: 20px;
   }
 `;

@@ -9,7 +9,7 @@ const HeroSection = ({ data }) => {
 
   return (
     <Styled.Container id='home'>
-      <Styled.RainParticles
+      {/* <Styled.RainParticles
         params={{
           particles: {
             number: {
@@ -37,7 +37,7 @@ const HeroSection = ({ data }) => {
             },
           },
         }}
-      />
+      /> */}
       <Styled.Content>
         <Styled.Topline> Hi, my name is </Styled.Topline>
         <Styled.H1> Saim Ahmad </Styled.H1>

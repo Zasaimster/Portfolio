@@ -19,7 +19,7 @@ export const InfoContainer = styled.div`
   }
 
   @media screen and (max-width: 450px) {
-    padding: 50px 0;
+    padding: 15px 0;
     margin-bottom: -75px;
   }
 `;
@@ -27,13 +27,21 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
-  max-height: 600px;
+  height: 400px;
   width: 100%;
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
   justify-content: center;
+
+  @media screen and (max-width: 768px) {
+    height: 500px;
+  }
+
+  @media screen and (max-width: 450px) {
+    height: 700px;
+  }
 `;
 
 export const TextWrapper = styled.div`
@@ -68,10 +76,10 @@ export const Heading = styled.h1`
   font-size: 24px;
   line-height: 1.1;
   font-weight: 600;
-  color: ${({ lightText }) =>
-    lightText ? theme.lightTextColor : theme.darkTextColor};
+  color: ${({ lightText }) =>lightText ? theme.lightTextColor : theme.darkTextColor};
 
   @media screen and (max-width: 480px) {
+    font-size: 18px ;
   }
 `;
 
