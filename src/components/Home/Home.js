@@ -41,12 +41,12 @@ const HeroSection = ({ data }) => {
       <Styled.Content>
         <Styled.Topline> Hi, my name is </Styled.Topline>
         <Styled.H1> Saim Ahmad </Styled.H1>
-        <Styled.H2> Software Engineer </Styled.H2>
-        <Styled.P> {data.desc1} </Styled.P>
+        <Styled.H2> I'm a Software Engineer </Styled.H2>
+        {/* <Styled.P> {data.desc1} </Styled.P> */}
         <Styled.P> {data.desc2} </Styled.P>
         <Styled.BtnWrap>
           <Button
-            href='mailto:Saimm.Ahmadd@gmailcom'
+            href='mailto:saimm.ahmadd@gmail.com'
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary='true'

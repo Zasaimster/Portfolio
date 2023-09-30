@@ -3,42 +3,53 @@ import paint from "../images/paint.png";
 import zasbot from "../images/zasbot.png";
 
 const homePage = {
-  desc1: "I'm currently a Junior studying Computer Science at UCLA.",
+  // desc1: "I'm currently a Senior studying Computer Science at UCLA.",
   desc2:
-    "I have experience building full stack applications, microservices, and APIs. I'm always trying to expand my skill set by learning new topics.",
+    "I'm a California based Computer Science student with experience building full stack applications, microservices, and DevOps tools. I recently finished a Software Development internship at Yahoo where I created an automated registry scraper saving the company significant operational expenses.",
 };
 
 const about = {
   imgStart: false,
   smallHeader: "About Me",
   header: null,
-  desc1: `Hey! My name is Saim, and I'm currently a Junior studying Computer Science at UCLA. When I was younger, I always enjoyed tinkering and creating things. Now, I am spending my time learning new skills that will help me contribute to new technologies and software, hopefully making the world a beter place.`,
-  desc2: `Today, I've had the opportunity of working at a multichannel video programming distributor, a student led satellite mission, UCLA's premier professor, class, and apartment review website, and at an organization that utilizes applications as an outlet for creativity. I'm currently looking for more opportunities as a software developer, and I'm looking to learn more about data analysis and embedded systems.`,
+  desc1: `Hey! My name is Saim, and I'm currently a Senior studying Computer Science at UCLA. When I was younger, I always enjoyed tinkering and creating things. Now, I am spending my time learning new skills that will help me contribute to new technologies and software, hopefully making the world a beter place.`,
+  desc2: `Today, I've had the opportunity of working at a large web service provider, multichannel video programming distributor, a student led satellite mission, and UCLA's premier professor, class, and apartment review website. I'm currently looking for more opportunities as a software developer, and I'm looking to learn more about data analysis and embedded systems.`,
   desc3: `Here are a few technologies I use: `,
   alt: "",
   tags: [
     "React",
     "Node.js",
     "Golang",
-    "PostgreSQL/MySQL",
+    "AWS",
     "C++",
     "Python",
   ],
 };
 
-const listOfExperiences = ["DirecTV", "ELFIN", "Daily Bruin", "Palace Properties", "Creative Labs"];
+const listOfExperiences = ["Yahoo", "DIRECTV", "ELFIN", "Daily Bruin", "Palace Properties", "Creative Labs"];
 
 const experience = [
   {
+    title: "Software Development Engineering Intern",
+    company: "Yahoo",
+    link: "https://www.yahooinc.com/about",
+    desc: [
+        "Designed and implemented a Screwdriver pipeline to efficiently extract and delete stale images and their signatures from a Docker registry and S3 bucket, significantly reducing operational expenses by approximately 65%.",
+        "Introduced effective load management techniques to handle over a terabyte of data, leveraging AWS SQS for optimal performance.",
+        "Enhanced functionality by integrating a delete endpoint into a Golang API, enabling seamless removal of objects from S3.",
+        "Developed a comprehensive test suite to ensure robust functionality and the ability for different critical services to handle high-volume traffic effectively.",
+    ],
+    startDate: "June 2023",
+    endDate: "September 2023"
+  },
+  {
     title: "Backend Engineering Intern",
-    company: "DirecTV",
+    company: "DIRECTV",
     link: "https://www.directv.com/stream/",
     desc: [
-        "Redesigning an antiquated location microservice that serves locational data mappings used by the stream authentication pipeline",
-        "Ensuring that the service correctly handles all use cases in its millions of daily transactions through extensive unit tests and functional tests",
-        "Reduced the code footprint and provided documentation, offering better code maintainability in the future",
-        "Optimized processing speed by identifying and parallelizing multiple portions of the service",
-        "Working with Golang, Kafka, Couchbase, Kubernetes, Jenkins"
+        "Redesigned an outdated location microservice for regional data mappings in the stream authentication pipeline, achieving enhanced processing speed through strategic parallelization",
+        "Validated the service’s capability to handle over 1,500 transactions per second by implementing comprehensive automated and unit tests, ensuring data integrity and usability.",
+        "Reduced the code footprint and provided documentation, offering better code maintainability in the future.",
     ],
     startDate: "June 2022",
     endDate: "September 2022"
@@ -48,8 +59,8 @@ const experience = [
     company: "ELFIN",
     link: "https://elfin.igpp.ucla.edu/",
     desc: [
-        "Architected an end-to-end React web application that shifts the ADCS pipeline away from a CLI into a GUI, enabling scientists to efficiently verify, generate, and model multiple satellites' attitude data.",
-        "Designed and implemented a dashboard to visualize telemetry data to assist with mission operations and verify generated maneuver data for the NASA funded mission",
+        "Architected an end-to-end React web application written in Typescript coupled with a FastAPI backend that shifts the ADCS pipeline away from a CLI into a comprehensive GUI, enabling scientists to efficiently verify, generate, and model multiple satellites’ second resolution attitude data.",
+        "Designed and implemented a dashboard to visualize telemetry data to assist with mission operations and verify generated maneuver data for the NASA funded mission.",
         "Developed Python API to communicate with the team's MySQL and PostgreSQL databases.",
         "Helped operate two in orbit CubeSats to efficiently collect scientific data and ensure satellite health"
     ],
@@ -67,7 +78,7 @@ const experience = [
       "Integrated React.js into the codebase to increase functionality and customizability of components, ensuring a better user experience",
     ],
     startDate: "August 2021",
-    endDate: "Present",
+    endDate: "January 2023",
   },
   {
     title: "Software Engineering Intern",

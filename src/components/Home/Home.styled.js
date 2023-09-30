@@ -84,6 +84,7 @@ export const H2 = styled.h1`
 
 export const P = styled.p`
   opacity: 0;
+  line-height: 28px;
 
   &:nth-of-type(2) {
     margin-top: 24px;
@@ -98,15 +99,15 @@ export const P = styled.p`
   }
   //color: #fff;
   color: rgba(255, 255, 255, 0.7);
-  font-size: 24px;
+  font-size: 18px;
   max-width: 600px;
 
   @media screen and (max-width: 768px) {
-    font-size: 22px;
+    font-size: 16px;
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 16px;
+    font-size: 10px;
   }
 `;
 
